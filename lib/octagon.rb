@@ -1,7 +1,7 @@
 require 'shape'
 
-# This is an Octogon
-class Octogon < Shape
+# This is an Octagon
+class Octagon < Shape
   attr_reader :side_length
 
   def length(length)

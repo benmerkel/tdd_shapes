@@ -1,11 +1,11 @@
 require 'rspec'
-require './lib/octogon'
+require './lib/octagon'
 require './lib/shape'
 
-describe Octogon do
+describe Octagon do
 
   it 'should be an octogon' do
-    expect(subject).to be_a(Octogon)
+    expect(subject).to be_a(Octagon)
   end
 
   it 'should be a shape' do
@@ -29,7 +29,7 @@ describe Octogon do
   end
 
   describe '#area' do
-    it 'should return the octogon area' do
+    it 'should return the octagon area' do
       side_length = 4
       expected_area = 2 * (1 + Math.sqrt(2)) * side_length**2
       expect(subject.area(side_length)).to equal(expected_area)
